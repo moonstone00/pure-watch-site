@@ -15,7 +15,7 @@ body {
 a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 10;
 }
 
@@ -110,6 +110,7 @@ section h2 {
     width: 300px;
     height: 180px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .card img {
@@ -119,6 +120,11 @@ section h2 {
     transform: translateX(-50%);
     width: 130px;
     height: 180px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover img {
+    transform: translateX(-50%) rotate(70deg) ;
 }
 
 .card div {
@@ -161,3 +167,36 @@ footer {
     font-style: normal;
     font-size: 14px;
 }
+
+.vollkorn-sc-regular {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vollkorn-sc-semibold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.vollkorn-sc-bold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.vollkorn-sc-black {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+/* @-webkit-keyframes rotation {
+    from { -webkit-transform: rotate(0deg); }
+    to { 
+        -webkit-transform: rotate(120deg); 
+        -webkit-transform: rotateY('angle');
+    }
+} */
